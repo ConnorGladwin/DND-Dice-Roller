@@ -2,29 +2,10 @@ const output = document.querySelector('.output');
 const btn = document.querySelector('.btn');
 const diceButton = Array.from(document.querySelectorAll('[name="diceButton"]'));
 let mod = document.getElementById('mod').value = 0;
-console.log(mod);
 
-const diceSelector = {
-    four() {
-
-    },
-    six() {
-
-    },
-    eight() {
-
-    },
-    ten() {
-
-    },
-    twelve() {
-
-    },
-    twenty() {
-        
-    }
+function selectedDice() {
+    return diceButton.find(dice => dice.checked).value;
 }
-
 
 function handleRoll(max, min) {
     const rNum = Number.parseInt(Math.random() * (max - min) + min);
@@ -41,5 +22,6 @@ function handleRoll(max, min) {
 }
 
 btn.addEventListener('click', () => {
-    output.textContent = handleRoll(21, 1);
+    let max = selectedDice();
+    output.textContent = handleRoll(max, 1);
 });
