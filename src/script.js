@@ -6,12 +6,12 @@ let mod = document.getElementById('mod').value = 0;
 let diceButtons = document.getElementsByName('diceButton');
 for (let i = 0; i < diceButtons.length; i++) {
     diceButtons[i].addEventListener('click', function() {
-        removeClass();
         addClass(this, i);
     });
 }
 
 function addClass(button, i) {
+    diceButtons.forEach(button => button.classList.remove('selected'));
     button.classList.add('selected');
 }
 
