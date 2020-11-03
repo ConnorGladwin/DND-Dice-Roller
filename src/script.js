@@ -1,11 +1,20 @@
 const output = document.querySelector('.output');
 const btn = document.querySelector('.btn');
-const diceButton = Array.from(document.querySelectorAll('[name="diceButton"]'));
 let mod = document.getElementById('mod').value = 0;
 
-function selectedDice() {
-    return diceButton.find(dice => dice.checked).value;
+// adds the "selected class to the selected button"
+let diceButtons = document.getElementsByName('diceButton');
+for (let i = 0; i < diceButtons.length; i++) {
+    diceButtons[i].addEventListener('click', function() {
+        removeClass();
+        addClass(this, i);
+    });
 }
+
+function addClass(button, i) {
+    button.classList.add('selected');
+}
+
 
 function handleRoll(max, min) {
     const rNum = Number.parseInt(Math.random() * (max - min) + min);
