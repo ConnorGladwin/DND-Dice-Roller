@@ -10,11 +10,9 @@
     <h1>Die!</h1>
 
    <div class="inputs">
-        <p class="output">Roll for Initiative!</p>
+        <p class="output col-12">Roll for Initiative!</p>
         <label for="mod">Modifier</label>
         <input type="number" name="modifier" id="mod" placeholder="0">
-        <label for="nDice">Number of Die</label>
-        <input type="number" name="nDice" id="nDice">
    </div>
 
     <div class="button list col-12">
@@ -23,10 +21,10 @@
         <button value="9" type="button" name="diceButton" class="btn btn-primary">d8</button>
         <button value="11" type="button" name="diceButton" class="btn btn-primary">d10</button>
         <button value="13" type="button" name="diceButton" class="btn btn-primary">d12</button>
-        <button value="21" type="button" name="diceButton" class="btn btn-primary">d20</button>
+        <button value="21" type="button" name="diceButton" class="btn btn-primary selected">d20</button>
     </div>
 
-    <button class="btn">Roll!</button>
+    <button class="rollBtn">Roll!</button>
 
     <script src="src/script.js"></script>
 </body>
