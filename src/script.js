@@ -18,7 +18,7 @@ function addClass(button, i) {
 function selectedDice(diceButtons) {
     for (let i = 0; i < diceButtons.length; i++) {
         if (diceButtons[i].classList.contains('selected')) {
-            console.log(diceButtons[i].value);
+            return diceButtons[i].value;
         }
     }
 }

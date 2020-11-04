@@ -4,10 +4,16 @@ body {
     align-items: center;
 }
 
+button {
+    height: 50px;
+    width: 50px;
+}
+
 .btn {
-    margin-top: 10px;
+    margin: 10px 10px;
 }
 
 .output {
     text-align: center;
+    font-size: 2em;
 }

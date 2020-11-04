@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Die</title>
 </head>
-<body>
-    <h1>Die!</h1>
 
-   <div class="inputs">
+<body>
+    <div class="inputs">
         <p class="output col-12">Roll for Initiative!</p>
         <label for="mod">Modifier</label>
         <input type="number" name="modifier" id="mod" placeholder="0">
-   </div>
+    </div>
 
     <div class="button list col-12">
-        <button value="5" type="button" name="diceButton" class="btn btn-primary">d4</button>
-        <button value="7" type="button" name="diceButton" class="btn btn-primary">d6</button>
-        <button value="9" type="button" name="diceButton" class="btn btn-primary">d8</button>
-        <button value="11" type="button" name="diceButton" class="btn btn-primary">d10</button>
-        <button value="13" type="button" name="diceButton" class="btn btn-primary">d12</button>
-        <button value="21" type="button" name="diceButton" class="btn btn-primary selected">d20</button>
+        <input value="5" type="image" src="img/d10" width="80px" height="80px" name="diceButton"
+            class="btn btn-primary"></input>
+        <input value="7" type="image" src="img/dice-six.png" width="80px" height="80px" name="diceButton"
+            class="btn btn-primary"></input>
+        <input value="9" type="image" src="img/d10" width="80px" height="80px" name="diceButton"
+            class="btn btn-primary"></input>
+        <input value="11" type="image" src="img/d20" width="80px" height="80px" name="diceButton"
+            class="btn btn-primary"></input>
+        <input value="13" type="image" src="img/dodecahedron.png" width="80px" height="80px" name="diceButton"
+            class="btn btn-primary"></input>
+        <input value="21" type="image" src="img/icosahedron.png" width="80px" height="80px" name="diceButton"
+            class="btn btn-primary selected"></input>
     </div>
 
     <button class="rollBtn">Roll!</button>
 
     <script src="src/script.js"></script>
 </body>
+
 </html>
