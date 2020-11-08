@@ -15,6 +15,10 @@ function addClass(button, i) {
     button.classList.add('selected');
 }
 
+function lowLight(button) {
+    
+}
+
 // passes the selected dice to the roll function
 function selectedDice(diceButtons) {
     for (let i = 0; i < diceButtons.length; i++) {
