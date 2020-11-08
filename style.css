@@ -23,5 +23,5 @@ button {
     height: 40px; */
     border-radius: 50%;
     background-color: transparent;
-    box-shadow: 0 0 60px 40px #0ff; /* outer cyan */
+    box-shadow: 0 0 60px 40px #FFD700; /* outer cyan */
 }
