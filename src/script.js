@@ -1,6 +1,6 @@
 const output = document.querySelector('.output');
 const rollBtn = document.querySelector('.rollBtn');
-let mod = document.getElementById('mod').value = 0;
+let mod = document.getElementById('mod').value;
 
 let diceButtons = document.getElementsByName('diceButton');
 for (let i = 0; i < diceButtons.length; i++) {
@@ -13,10 +13,6 @@ for (let i = 0; i < diceButtons.length; i++) {
 function addClass(button, i) {
     diceButtons.forEach(button => button.classList.remove('selected'));
     button.classList.add('selected');
-}
-
-function lowLight(button) {
-    
 }
 
 // passes the selected dice to the roll function
@@ -32,7 +28,7 @@ function selectedDice(diceButtons) {
 function handleRoll(max, min) {
 
     // determines what modifier is added to the roll
-    if ((document.getElementById('mod').value) == 0) {
+    if ((document.getElementById('mod').value) == '') {
         mod = 0
     } else {
         mod = Number.parseInt(document.getElementById('mod').value);
