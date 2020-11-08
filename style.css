@@ -25,7 +25,7 @@ button {
 }
 
 .output {
-    margin-top: 200px;
+    margin-top: 150px;
     margin-bottom: 50px;
     text-align: center;
     font-size: 4em;
@@ -59,6 +59,7 @@ button {
     align-items: center;
     text-align: center;
     justify-content: center;
+    margin-bottom: 150px;
 }
 
 .selected {
