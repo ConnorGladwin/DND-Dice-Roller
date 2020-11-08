@@ -5,12 +5,21 @@ Create mobile view
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 
+html {
+    width: 100%;
+    height: auto;
+}
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-family: 'Rubik Mono One', sans-serif;
     background: url(img/qbkls.png);
+    width: 90%;
+    height: auto;
+    margin: auto;
 }
 
 button {
@@ -18,17 +27,26 @@ button {
     width: 50px;
 }
 
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+}
+
 .btn {
-    margin-top: 20%;
+    margin-top: 15%;
     margin-right: 50px;
     background: transparent;
 }
 
 .output {
     margin-top: 150px;
-    margin-bottom: 50px;
+    margin-bottom: 8%;
     text-align: center;
-    font-size: 4em;
+    font-size: 5em;
 }
 
 .mod-input {
@@ -50,7 +68,8 @@ button {
     width: 50px;
 }
 
-.rollBtn {margin-top: 100px;
+.rollBtn {
+    margin-top: 100px;
     background-color: transparent;
     border: transparent;
     font-size: 2em;
