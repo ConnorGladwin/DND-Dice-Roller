@@ -3,10 +3,27 @@
 Create mobile view
 */
 
-/* Commented out code to be removed */
-/* Code commented out for better screen compatibility */
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+@media only screen 
+    and (max-device-width: 375px)
+    and (max-device-width: 812px) 
+    and (-webkit-min-device-pixel-ratio: 3) {
+
+    html, body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        font-family: 'Rubik Mono One', sans-serif;
+        background: url(img/qbkls.png);
+        margin: 0;
+    }
+
+    .button-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 body {
     display: flex;
@@ -15,8 +32,6 @@ body {
     align-items: center;
     font-family: 'Rubik Mono One', sans-serif;
     background: url(img/qbkls.png);
-    /* width:99%; */
-    /* min-width: 1000px; */
     height: 90vh;
 }
 
@@ -25,25 +40,23 @@ button {
     width: 50px;
 }
 
-footer {
+/* footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     color: black;
     text-align: center;
-}
+} */
 
 .btn {
     margin-top: 10%;
     margin-right: 50px;
+    margin-left: 50px;
     background: transparent;
 }
 
 .output {
-    /* margin-top: 150px; */
-    /* margin-bottom: 50px; */
-    /* text-align: center; */
     font-size: 4em;
 }
 
@@ -76,7 +89,6 @@ footer {
     align-items: center;
     text-align: center;
     justify-content: center;
-    /* margin-bottom: 150px; */
 }
 
 .selected {
@@ -86,12 +98,16 @@ footer {
     border: transparent;
     background: transparent;
     box-shadow:
-        inset 0 0 90px #FFD700,      /* inner white*/
-        inset 20px 0 90px #FFD700,   /* inner left magenta short */
-        inset -20px 0 90px #FFD700,  /* inner right cyan short */
-        inset 20px 0 300px #FFD700,  /* inner left magenta broad */
-        inset -20px 0 300px #FFD700, /* inner right cyan broad */
-        0 0 50px #FFD700,            /* outer white */
-        -10px 0 90px #FFD700,        /* outer left magenta */
-        10px 0 90px #FFD700;         /* outer right cyan */
-    }
+        /* Gold backlighting for buttons */
+        inset 0 0 90px #FFD700,      
+        inset 20px 0 90px #FFD700,   
+        inset -20px 0 90px #FFD700,  
+        inset 20px 0 300px #FFD700,  
+        inset -20px 0 300px #FFD700, 
+        0 0 50px #FFD700,            
+        -10px 0 90px #FFD700,        
+        10px 0 90px #FFD700;         
+}
+
+
+/* Mobile view */
