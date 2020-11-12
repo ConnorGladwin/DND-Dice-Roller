@@ -44,6 +44,7 @@ button {
     align-items: center;
     text-align: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .mod-input > label {
