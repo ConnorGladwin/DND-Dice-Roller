@@ -1,27 +1,7 @@
-/* TODO */
-/* 
-Create mobile view
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 
-@media screen 
-    and (max-device-width: 375px)
-    and (max-device-width: 812px) 
-    and (-webkit-min-device-pixel-ratio: 3) {
-
-    html > body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;  
-        font-family: 'Rubik Mono One', sans-serif;
-        background: url(img/qbkls.png);
-    }
-
-    .button-list {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
+html {
+    height: 100vh;
 }
 
 body {
@@ -32,6 +12,7 @@ body {
     font-family: 'Rubik Mono One', sans-serif;
     background: url(img/qbkls.png);
     height: 90vh;
+    margin: auto;
 }
 
 button {
@@ -41,14 +22,13 @@ button {
 
 .btn {
     margin-top: 10%;
-    margin-right: 50px;
-    margin-left: 50px;
     background: transparent;
 }
 
 .button-list {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 50px;
 }
 
 .output {
@@ -103,6 +83,3 @@ button {
         -10px 0 90px #FFD700,        
         10px 0 90px #FFD700;         
 }
-
-
-/* Mobile view */
